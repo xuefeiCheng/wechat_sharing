@@ -12,6 +12,23 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     listData: []
   },
+  // 下拉刷新
+  onPullDownRefresh () {
+    this.listData = Api.getNews();
+    console.info("下拉刷新执行");
+    setTimeout(() => {
+      wx.stopPullDownRefresh();
+    }, 1000);
+  },
+  // 上拉加载
+  onReachBottom () {
+    console.info("触发上拉加载");
+    let listData = this.data.listData;
+    listData.push(...Api.getNews());
+    this.setData({
+      listData
+    })
+  },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({

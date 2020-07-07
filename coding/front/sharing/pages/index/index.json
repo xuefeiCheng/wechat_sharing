@@ -1,4 +1,6 @@
 {
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "break",
   "usingComponents": {
     "card": "../../components/card/card"
   }
