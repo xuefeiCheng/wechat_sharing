@@ -1,12 +1,42 @@
 {
   "pages":[
+    "components/card/card",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "components/info/info",
+    "components/new/new"
   ],
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#17c54b",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "components/card/card",
+        "text": "发现",
+        "iconPath": "static/img/earth.png",
+        "selectedIconPath": "static/img/earth_selected.png"
+      },
+      {
+        "pagePath": "components/new/new",
+        "text": "发布",
+        "iconPath": "static/img/add.png",
+        "selectedIconPath": "static/img/add_selected.png"
+      },
+      {
+        "pagePath": "components/info/info",
+        "text": "我",
+        "iconPath": "static/img/user_center.png",
+        "selectedIconPath": "static/img/user_center_selected.png"
+      }
+    ]
+  },
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "分享会",
     "navigationBarTextStyle":"black"
   },
   "style": "v2",
