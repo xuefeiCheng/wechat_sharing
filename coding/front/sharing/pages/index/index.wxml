@@ -1,6 +1,6 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
+<view>
+  <!-- <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
@@ -9,8 +9,12 @@
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
-  </view>
-  <view>
-    <card></card>
+  </view> -->
+  <view class="uni-list">
+    <view class="uni-list-cell">
+      <view wx:for="{{listData}}" wx:for-index="key" wx:key="key">
+        <card item="{{item}}"></card>
+      </view>
+    </view>
   </view>
 </view>

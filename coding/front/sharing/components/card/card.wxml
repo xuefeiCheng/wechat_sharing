@@ -1,4 +1,38 @@
 <!--components/card/card.wxml-->
-<view class="" hover-class="none" hover-stop-propagation="false">
-  <text>components/card/card.wxml</text>
+<view class="uni-media-list">
+  <view class="uni-media-header flex">
+    <view class="uni-media-header-logo">
+      <image src="{{item.cover}}" mode="aspectFill"></image>
+    </view>
+    <view class="uni-media-header-info flex flex-direction-column space-between">
+      <view class="uni-media-header-info-auther">{{item.author_name}}</view>
+      <view class="uni-media-header-info-detail">{{item.published_at}} {{item.form}}</view>
+    </view>
+  </view>
+  
+  <view class="uni-media_content-box">
+    <view class="uni-media_content-text">{{item.content}}</view>
+    <view class="uni-media_content-iamges">
+      <view class="uni-media_content-img {{item.imgs.length === 1?'img_1':''}}" wx:for="{{item.imgs}}" wx:key="index">
+        <view class="uni-media_content-img-item">
+          <image src="{{item}}" mode="aspectFill" />
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="uni-media_groups">
+    <view class="uni-media_groups-item">
+      <text class="iconfont icon-fenxiang-copy"></text>
+      <text>{{item.share}}万</text>
+    </view>
+    <view class="uni-media_groups-item">
+      <text class="iconfont icon-pinglun"></text>
+      <text>3{{item.comment}}万</text>
+    </view>
+    <view class="uni-media_groups-item" bindtap="trigger">
+      <text class="iconfont icon-dianzan1 {{isActive ? 'active' : ''}}"></text>
+      <text>{{item.thumbs}}万</text>
+    </view>
+  </view>
 </view>

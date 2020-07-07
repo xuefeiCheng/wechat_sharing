@@ -1,66 +1,35 @@
-// components/card/card.js
-Page({
+//Component Object
+Component({
+  properties: {
+    item:{
+      type:Object,
+      value:{}
+    },
 
-  /**
-   * 页面的初始数据
-   */
+  },
   data: {
+    isActive: false
+  },
+  methods: {
+    trigger () {
+      this.setData({
+        isActive: !this.data.isActive
+      })
+    }
+  },
+  created: function(){
 
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
+  attached: function(){
 
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
+  ready: function(){
 
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
+  moved: function(){
 
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
+  detached: function(){
 
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
-})
+});
