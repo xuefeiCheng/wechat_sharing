@@ -1,4 +1,7 @@
 /* components/card/card.wxss */
+.hidden {
+  display: none !important;
+}
 .flex {
   display: flex;
 }

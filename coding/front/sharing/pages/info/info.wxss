@@ -1,0 +1,55 @@
+/* pages/info/info.wxss */
+@import '/static/font/iconfont.wxss';
+.uni-info-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.uni-info-box image{
+  width: 100%;
+  height: 680rpx;
+}
+.uni-info-header {
+  position: absolute;
+  top: 180rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.uni-info-header-1 {
+  top: 340rpx;
+}
+
+.uni-info-header-image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px #f5f5f5 solid;
+  box-shadow: 0 0 10px #8bb4fa;
+}
+.uni-info-header-image image {
+  width: 100%;
+  height: 100%;
+}
+.uni-info-header-nickname {
+  padding-top: 30rpx;
+  color: #fff;
+  font-size: 34rpx;
+}
+.uni-info-nickname{font-weight: 400;}
+.uni-info-phone{color: #9b9797;}
+.uni-info-list {
+  background-color: #fff;
+  padding: 10rpx 20rpx;
+}
+.uni-info-cell {
+  display: flex;
+  justify-content: space-between;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1px #E6E6E6 solid;
+  color: #333;
+}

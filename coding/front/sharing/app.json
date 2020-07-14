@@ -1,9 +1,9 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/info/info",
     "pages/logs/logs",
     "components/card/card",
-    "components/info/info",
     "components/new/new"
   ],
   "tabBar": {
@@ -26,7 +26,7 @@
         "selectedIconPath": "static/img/add_selected.png"
       },
       {
-        "pagePath": "components/info/info",
+        "pagePath": "pages/info/info",
         "text": "我",
         "iconPath": "static/img/user_center.png",
         "selectedIconPath": "static/img/user_center_selected.png"

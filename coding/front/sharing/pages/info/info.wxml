@@ -1,0 +1,32 @@
+<!--pages/info/info.wxml-->
+<view class="uni-info-box" hover-class="none" hover-stop-propagation="false">
+  <image class="" src="../../static/img/harass_bg.png" mode="aspectFill" lazy-load="false" binderror="" bindload=""></image>
+  <!-- 头像 + 昵称 -->
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  <block wx:else>
+    <view class="uni-info-header" hover-class="none" hover-stop-propagation="false">
+      <view class="uni-info-header-image" hover-class="none" hover-stop-propagation="false"> 
+        <image src="{{userInfo.avatarUrl}}"  mode="aspectFill" />
+      </view>
+    </view>
+    <view class="uni-info-header uni-info-header-1" hover-class="none" hover-stop-propagation="false">
+      <view class="uni-info-header-nickname" hover-class="none" hover-stop-propagation="false">
+        <view class="uni-info-nickname">{{userInfo.nickName}}</view>
+      </view>
+    </view>
+  </block>
+  <view class="uni-info-list" hover-class="none" hover-stop-propagation="false">
+    <view class="uni-info-cell" hover-class="none" hover-stop-propagation="false">
+      <view class="" hover-class="none" hover-stop-propagation="false">
+        意见反馈
+      </view>
+      <view class="iconfont icon-next" hover-class="none" hover-stop-propagation="false"></view>
+    </view>
+    <view class="uni-info-cell" hover-class="none" hover-stop-propagation="false">
+      <view class="" hover-class="none" hover-stop-propagation="false">
+        常见问题
+      </view>
+      <view class="iconfont icon-next" hover-class="none" hover-stop-propagation="false"></view>
+    </view>
+  </view>
+</view>
