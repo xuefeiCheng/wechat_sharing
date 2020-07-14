@@ -2,9 +2,9 @@
   "pages":[
     "pages/index/index",
     "pages/info/info",
+    "pages/new/new",
     "pages/logs/logs",
-    "components/card/card",
-    "components/new/new"
+    "components/card/card"
   ],
   "tabBar": {
     "color": "#000",
@@ -20,7 +20,7 @@
         "selectedIconPath": "static/img/earth_selected.png"
       },
       {
-        "pagePath": "components/new/new",
+        "pagePath": "pages/new/new",
         "text": "发布",
         "iconPath": "static/img/add.png",
         "selectedIconPath": "static/img/add_selected.png"

@@ -1,0 +1,20 @@
+<!--pages/new/new.wxml-->
+<view class="uni-new-box" hover-class="none" hover-stop-propagation="false">
+  <view class="uni-new-textarea" hover-class="none" hover-stop-propagation="false">
+    <textarea placeholder="说点什么吧···" auto-focus placeholder-style="color:#eee"/>
+  </view>
+  <view class="uni-new-text" hover-class="none" hover-stop-propagation="false">
+    <text>传个照片吧~</text>
+  </view>
+  <view class="uni-new-imagesList" hover-class="none" hover-stop-propagation="false">
+    <view class="uni-new-image" hover-class="none" hover-stop-propagation="false" wx:for="{{productInfo}}" wx:key="index">
+      <image class="" src="{{item}}" mode="aspectFill" lazy-load="false" binderror="" bindload=""></image>
+    </view>
+    <view class="uni-new-image" hover-class="none" hover-stop-propagation="false" bindtap="bindChooiceProduct">
+      <image class="" src="/static/img/image-add.png" mode="aaspectFill" lazy-load="false" binderror="" bindload=""></image>
+    </view>
+  </view>
+  <view class="uni-new-btn" hover-class="none" hover-stop-propagation="false">
+    发布
+  </view>
+</view>

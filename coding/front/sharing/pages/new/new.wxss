@@ -1,0 +1,53 @@
+/* pages/new/new.wxss */
+.uni-new-box {
+  background-color: #eee;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+.uni-new-text {
+  background:#fff;font-size:24rpx;padding:10rpx 20rpx;color:rgb(185, 184, 184);
+}
+.uni-new-textarea {
+  background: #fff;
+  padding: 10rpx;
+  margin: 10rpx 0;
+  font-size: 30rpx;
+}
+.uni-new-imagesList {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 10rpx 20rpx;
+}
+.uni-new-image {
+  width: 30%;
+  height: 150rpx;
+  box-shadow: 0 0 6rpx #e3e3e3;
+  margin-bottom: 20rpx;
+  margin-right: 4%;
+}
+.uni-new-image:nth-child(3n+0) {
+  margin-right: 0;
+}
+.uni-new-image image {
+  width: 100%;
+  height: 100%;
+}
+.uni-new-btn {
+  position: absolute;
+  bottom: 20rpx;
+  width: 70%;
+  margin-left: 15%;
+  color: #fff;
+  border-radius: 20rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background: -webkit-linear-gradient(#58BDDC,#40DAC6); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#58BDDC,#40DAC6); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#58BDDC,#40DAC6); /* Firefox 3.6 - 15 */
+  background: linear-gradient(#58BDDC,#40DAC6); /* 标准的语法（必须放在最后） */
+}
